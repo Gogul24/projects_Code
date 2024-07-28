@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching Pokemon</title>
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e5799, #2989d8);
+}
+
+.container {
+    width: 320px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.insideCon {
+    padding-top: 20px;
+}
+
+.title {
+    color: #2989d8;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #2989d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e5799;
+}
+
+img {
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    display: none;
+    margin-left: 24%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="insideCon">
+            <input type="text" name="pokemonText" id="pokemonText" placeholder="Enter the Pokemon"></input><br><br>
+            <button type="button" onclick='fetchPokemon()'>Fetch Pokemon</button><br><br>
+            <h1 id="error"></h1><br><br>
+            <img alt="Pokemon image" id="pokeImg" style="display: none">
+        </div>
+    </div>
+    <script src="fetchingPokemon.js"></script>
+</body>
+</html>

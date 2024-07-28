@@ -1,0 +1,40 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container{
+    border-radius: 35px;
+    width: 250px;
+    border: 2px solid black;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.815);
+}
+#display{
+    background: silver;
+    border-radius: 9px;
+    margin-top: 25px;
+    width: 98%;
+    height: 50px;
+    font-size: 40px;
+}
+.buttons{
+    padding-top: 30px;
+}
+
+.buttons button{
+    background: silver;
+    margin-left: 10px;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.buttons .btn1{
+    background: orange;
+}
